@@ -1,0 +1,27 @@
+18:22:46 **** Incremental Build of configuration Debug for project 33_1_dsp_basicmath ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -c -I../Core/Inc -I../../../libraries/Drivers/STM32F4xx_HAL_Driver/Inc -I../../../libraries/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../libraries/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../../libraries/Drivers/CMSIS/Include -I../../../libraries/Drivers/SYSTEM -I../BSP/LED -I../BSP/KEY -I../BSP/LCD -I../Core/DSP/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:157:3: warning: implicit declaration of function 'lcd_show_string' [-Wimplicit-function-declaration]
+  157 |   lcd_show_string(30,  50, 200, 16, 16, "STM32", RED);
+      |   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "33_1_dsp_basicmath.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\m144-m4-mini-board-stm32f407\example\33_1_dsp_basicmath\STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="33_1_dsp_basicmath.map" -Wl,--gc-sections -static "F:\m144-m4-mini-board-stm32f407\example\33_1_dsp_basicmath\Core\Lib\GCC\libarm_cortexM4lf_math.a" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 33_1_dsp_basicmath.elf
+ 
+arm-none-eabi-size  33_1_dsp_basicmath.elf 
+arm-none-eabi-objdump -h -S 33_1_dsp_basicmath.elf  > "33_1_dsp_basicmath.list"
+arm-none-eabi-objcopy  -O ihex 33_1_dsp_basicmath.elf  "33_1_dsp_basicmath.hex"
+arm-none-eabi-objcopy  -O binary 33_1_dsp_basicmath.elf  "33_1_dsp_basicmath.bin"
+   text	   data	    bss	    dec	    hex	filename
+  67288	    480	   2392	  70160	  11210	33_1_dsp_basicmath.elf
+Finished building: default.size.stdout
+ 
+Finished building: 33_1_dsp_basicmath.bin
+Finished building: 33_1_dsp_basicmath.hex
+Finished building: 33_1_dsp_basicmath.list
+ 
+ 
+ 
+
+18:22:49 Build Finished. 0 errors, 1 warnings. (took 3s.544ms)
+

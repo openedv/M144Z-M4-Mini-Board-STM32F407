@@ -1,0 +1,10 @@
+16:33:51 **** Incremental Build of configuration Debug for project 29_photo ****
+make -j16 all 
+arm-none-eabi-size  29_photo.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 279608	  61976	 123632	 465216	  71940	29_photo.elf
+Finished building: default.size.stdout
+ 
+
+16:33:52 Build Finished. 0 errors, 0 warnings. (took 1s.858ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;34_atkncr/ATK_Middlewares/ATKNCR/ATKNCR_M_V2.0.lib&apos; to &apos;ATKNCR_M_V2.0.a&apos;" description="Rename resource &apos;ATKNCR_M_V2.0.lib&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ATK_Middlewares/ATKNCR/ATKNCR_M_V2.0.lib" name="ATKNCR_M_V2.0.a" stamp="1716368413074" updateReferences="true"/>
+</session>

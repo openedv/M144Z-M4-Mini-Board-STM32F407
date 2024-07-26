@@ -1,0 +1,23 @@
+16:54:51 **** Incremental Build of configuration Debug for project 17_1_adc_single_channel ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../../../libraries/Drivers/STM32F4xx_HAL_Driver/Inc -I../../../libraries/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../libraries/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../../libraries/Drivers/CMSIS/Include -I../../../libraries/Drivers/SYSTEM -I../BSP/LED -I../BSP/KEY -I../BSP/LCD -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc -o "17_1_adc_single_channel.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\m144-m4-mini-board-stm32f407\example\17_1_adc_single_channel\STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="17_1_adc_single_channel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 17_1_adc_single_channel.elf
+ 
+arm-none-eabi-size  17_1_adc_single_channel.elf 
+arm-none-eabi-objdump -h -S 17_1_adc_single_channel.elf  > "17_1_adc_single_channel.list"
+arm-none-eabi-objcopy  -O ihex 17_1_adc_single_channel.elf  "17_1_adc_single_channel.hex"
+arm-none-eabi-objcopy  -O binary 17_1_adc_single_channel.elf  "17_1_adc_single_channel.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60692	    480	   2384	  63556	   f844	17_1_adc_single_channel.elf
+Finished building: default.size.stdout
+ 
+Finished building: 17_1_adc_single_channel.hex
+Finished building: 17_1_adc_single_channel.bin
+Finished building: 17_1_adc_single_channel.list
+ 
+ 
+ 
+
+16:54:55 Build Finished. 0 errors, 0 warnings. (took 3s.345ms)
+

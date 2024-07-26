@@ -1,0 +1,7 @@
+17:32:58 **** Build of configuration Debug for project 24_camera ****
+make -j16 all 
+make: *** No rule to make target 'F:/CubeIDE/h503_Git/m100-m4-mini-board-stm32f407/libraries/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c', needed by 'libraries/Drivers/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.o'.  Stop.
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+17:32:59 Build Failed. 1 errors, 0 warnings. (took 860ms)
+

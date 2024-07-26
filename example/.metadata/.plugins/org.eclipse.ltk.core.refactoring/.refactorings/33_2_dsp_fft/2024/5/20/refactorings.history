@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;33_2_dsp_fft/33_1_dsp_basicmath.ioc&apos; to &apos;33_2_dsp_fft.ioc&apos;" description="Rename resource &apos;33_1_dsp_basicmath.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="33_1_dsp_basicmath.ioc" name="33_2_dsp_fft.ioc" stamp="1715766743087" updateReferences="true"/>
+</session>
